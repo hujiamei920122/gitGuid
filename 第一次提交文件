@@ -1,0 +1,17 @@
+http://note.youdao.com/noteshare?id=a12cb2823dd454fc3cc225733e68edda
+使用HTTPS的方式克隆代码
+
+https://blog.csdn.net/u012501054/article/details/83655419
+
+怎么把自己的案例推到git上去
+1.在远程的maste分支上切出一个Dev分支，
+2.复制https仓库地址
+3.将代码git clone + 仓库地址
+4. git branch -a（查看分支） 创建并切换到新的分支dev git checkout -b dev origin dev
+5.git status查看状态，
+6.配置.gitignore文件，将node-module文件和dist以及.DS-store（mac电脑容易产生的额外文件）等需要忽略提交的文件忽略
+7.git add . 然后git commit -m '提交文件'
+8.git pull
+9.git push
+
+vim ~/.ssh/id_rsa.pub 一键找公钥
